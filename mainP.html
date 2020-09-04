@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src=".\massiv.js"></script>
+	<script src=".\classes.js"></script>
+	<style>
+		table {
+		border: 3px solid black;
+		border-collapse: collapse;
+		}
+		table.m {
+		float: left;
+		margin-right: 10px;
+		}
+		table.hp {
+		margin-bottom: 10px;
+		}
+		td.hp1 {
+		background: blue;
+		border-color: blue;
+		}
+		td.hp0 {
+		background: white;
+		border-color: white;
+		}
+		td.inventory11 {
+		height: 40px;
+		width: 40px;
+		background: orange;
+		text-align: center;
+		}
+		td.inventory4 {
+		height: 40px;
+		width: 40px;
+		background: purple;
+		text-align: center;
+		}
+		td.intventoryundefined{
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		}
+		td { 
+		border: 1px solid;
+		width: 20px; 
+		height: 20px;
+		}
+		td.cell0 {
+		background: white;
+		border-color: white;
+		}
+		td.cell1 {
+		background: blue;
+		border-color: blue;
+		}
+		td.cell2 {
+		background: black;
+		}
+		td.cell3 {
+		background: yellow;
+		border-color: yellow;
+
+		}
+		td.cell4 {
+		background: purple;
+		border-color: purple;
+		}
+		td.cell5 {
+		background: grey;
+		border-color: grey;
+		}
+		td.cell6 {
+		background: green;
+		border-color: green;
+		}
+		td.cell7 {
+		background: red;
+		border-color: red;
+		}
+		td.cell8 {
+		border-color: white;
+		border-color: white;
+
+		}
+		td.cell9 {
+		background: white;
+		border-color: white;
+		}
+		td.cell10 {
+		background: purple;
+		border-color: purple;
+		}
+		td.cell11 {
+		background: orange;
+		border-color: orange;
+		}
+	</style>
+
+
+
+</head>
+<body id ="body" onkeypress="window.game.PlayerStep(event)">
+	<p>ТОЛЬКО НА АНГЛИЙСКОЙ РАСКЛАДКЕ</p>
+	<p id="button"></p>
+	<div id="coins"></div>
+	<div id="bonuses"></div>
+	<div id="hp"></div>
+	<div id="divid">
+		<p><button onclick='window.game = new Game(1)'>Быстрая игра</button></p>
+		<p><button onclick='window.menu = new Game(5)'>Выбор уровня</button></p>
+	</div>
+	<div id="inventory"></div>
+</body>
+</html>
